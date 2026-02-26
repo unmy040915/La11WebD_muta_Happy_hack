@@ -1,0 +1,254 @@
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+  font-family: "Futura-Bol";
+  src: url("./fonts/Futura-Bol.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-Boo";
+  src: url("./fonts/Futura-Boo.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-BooObl";
+  src: url("./fonts/Futura-BooObl.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body{
+    color: #333333;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title{
+    font-size: 56px;
+    color: #445FD3;
+    font-family: "Futura-Bol";
+    padding: 40 0px;
+    margin: 40px 0;
+}
+header{
+    position: fixed;
+    z-index: 9999;
+    height: 100px;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px 65px;
+    margin-top: 20px;
+}
+
+header ul{
+    display: flex;
+    column-gap: 40px;
+    justify-content: flex-end;
+    list-style: none;
+}
+header ul li a:hover{
+    color: #445FD3;
+}
+header .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header a{
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Futura-Boo";
+    color: #fff;
+}
+
+.firstview{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/background1.jpg);
+}
+
+
+.firstview img{
+    width: 900px;
+    margin-bottom: 25px;
+}
+.firstview p{
+    font-family: "Futura-BooObl";
+    color: #fff;
+    font-size: 45px;
+}
+.introduction-card img{
+    width: 500px;
+}
+
+.introduction-card-warp{
+    margin: 22px 50px;
+    width: 400px;
+    line-height: 2.0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.introduction-card{
+    display: flex;
+    margin-bottom: 64px;
+
+}
+
+.introduction-button{
+    color: #fff;
+    padding: 2px 45px;
+    background-color: #445FD3;
+    display: inline-block;
+    font-family: "Futura-Bol";
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.introduction-card:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+
+.introduction-card:nth-of-type(2) .introduction-button{
+    background-color: #F4C142;
+}
+
+.courses{
+    background-color: #D9E5F7;
+    padding: 30px 0px;
+}
+.course-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-card{
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    width: 240px;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.course-card img{
+    margin: 60px;
+}
+
+#ruby-img img{
+    width: 108px;
+}
+
+.course-card p{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.course-card a{
+    color: #fff;
+    padding: 13px 24px;
+    display: inline-block;
+    font-family: "Futura-Bol";
+    font-weight: bold;
+    font-size: 13px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.course-card:nth-of-type(3) img{
+    width: 110px;
+    height: 110px;
+}
+
+
+
+
+.course-btn.is-html  {
+     background: #DE6D3C; 
+} 
+.course-btn.is-css   { 
+    background: #57A7DA;
+} 
+.course-btn.is-unity { 
+    background: #333333; 
+}
+.course-btn.is-ruby  { 
+    background: #EA5F59; 
+} 
+.course-btn.is-js    { 
+    background: #F7D749; 
+}
+.course-btn.is-swift { 
+    background: #EB7C47; 
+}
+.course-btn.is-go    { 
+    background: #8BCCDB; 
+} 
+
+.course-btn:hover{
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.slide-img{
+  width: 100%;
+  display: block;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    font-size: 16px;
+    font-family: "Futura-Boo";
+    color: #445FD3;
+    letter-spacing: 0.1em;
+
+}
+
+
+
+
+
+
+
