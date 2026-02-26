@@ -229,9 +229,24 @@ header a{
 }
 
 .slide-img{
-  width: 100%;
+
+    
   display: block;
 }
+.images .container{
+  align-items: center;
+}
+.images-slider{
+    width: 100%;
+}
+
+.slide-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
 footer{
     display: flex;
@@ -243,8 +258,8 @@ footer{
     font-family: "Futura-Boo";
     color: #445FD3;
     letter-spacing: 0.1em;
-
 }
+
 
 
 
