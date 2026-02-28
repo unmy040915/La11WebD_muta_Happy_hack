@@ -41,13 +41,6 @@ body{
     transform: translateY(20px);
     transition: all 1s;
 }
-@media  (max-width: 768px){
-    .container{
-        padding: 0 20px;
-    }
-    /* headerを消す */
-    
-}
 
 a{
     color: inherit;
@@ -95,6 +88,17 @@ header a{
     color: #fff;
 }
 
+ @media  (max-width: 768px){
+    .container{
+        padding: 0 20px;
+        margin: 0 20px;
+    }
+    header{
+        display: none;
+    }
+    
+} 
+
 .firstview{
     width: 100vw;
     height: 100vh;
@@ -118,10 +122,11 @@ header a{
 .firstview p{
     font-family: "Futura-BooObl";
     color: #fff;
-    font-size: 45px;
+    font-size: clamp(24px, 4.5vw, 48px);
 }
 .introduction-card img{
-    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .introduction-card-warp{
@@ -170,7 +175,7 @@ header a{
     }
     .introduction-card-warp{
         margin: 22px 0px;
-        width: 500px;
+        max-width: 500px;
     }
     .section-title{
         font-size: 45px;
