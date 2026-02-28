@@ -30,5 +30,25 @@ $(".images-slider").slick({
   arrows: true,
   dots: true,
   autoplay: true,
+    responsive: [
+    {
+      breakpoint: 1024,   // 1024px以下
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,    // 768px以下
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,    // 480px以下
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
  });
 });
