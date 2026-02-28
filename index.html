@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="slick-theme.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/jquery.bgswitcher.js"></script>
     <script src="js/slick.min.js"></script>
@@ -43,22 +44,23 @@
             </div>
 
 
-            <div class="introduction-card">
-                <img src="images/introduction_002.jpg" alt="">
-                <div class="introduction-card-warp">
-                    <p>
-                        Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
-                        WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
-                        自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
-                    </p>
-                    <a href="#introduction" class="introduction-button">会員登録</a>
-                </div>
+            <div class="introduction-card" id="introduction-card2">
+                    <img src="images/introduction_002.jpg" alt="">
+                    <div class="introduction-card-warp">
+                        <p>
+                            Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
+                            WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
+                            自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
+                        </p>
+                        <a href="#introduction" class="introduction-button">会員登録</a>
+                    </div>
             </div>
         </div>
     </section>
 
     <section class="courses" id="courses">
-        <div class="container">
+        <div id="particles-js"></div>
+        <div class="container" >
         <h2 class="section-title">Courses</h2>
             <div class="course-cards">
                 <div class="course-card">
@@ -126,12 +128,15 @@
         </div>
 
     </section>
-    <section class="access">
+    <section class="access" id="access">
         <div class="container">
             <h2 class="section-title">Access</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6560.625908500272!2d135.4898683126778!3d34.69728568328086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1772089879780!5m2!1sja!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
+
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 </body>
 <footer>
     ©2023 Happy Hack Inc.
