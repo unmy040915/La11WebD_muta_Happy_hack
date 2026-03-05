@@ -160,7 +160,6 @@ header a {
 }
 .introduction-button:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  
 }
 .introduction-button {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25);
@@ -304,7 +303,6 @@ header a {
 
 .course-btn:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  
 }
 .course-btn {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25);
@@ -343,22 +341,21 @@ header a {
     margin-top: 15px;
   }
 
+  .images-container {
+    align-items: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
 
-.images-container {
-  align-items: center;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 10px;
-
-  img {
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: 30px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      margin-bottom: 30px;
+    }
   }
 }
-
 .slide-img {
   display: block;
 }
@@ -375,18 +372,18 @@ header a {
   height: auto;
   display: block;
 }
-.images .container{
-    width: 100%;
-    max-width: 9900px;
-    padding: 0 40px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s;
+.images .container {
+  width: 100%;
+  max-width: 9900px;
+  padding: 0 40px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
 }
 .img-container {
   width: 100%;
