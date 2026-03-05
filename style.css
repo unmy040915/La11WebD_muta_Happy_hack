@@ -158,16 +158,27 @@ header a {
   border-radius: 10px;
   padding: 60px, 0;
 }
+.introduction-button:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  
+}
+.introduction-button {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s;
+}
 #introduction-card2 {
   flex-direction: row-reverse;
-}
-
-#introduction-card2 .introduction-button {
-  background-color: #f4c142;
+  .introduction-button {
+    background-color: #f4c142;
+  }
 }
 
 .button-margin {
   margin: 20px 0px;
+}
+
+.images-container {
+  width: 100%;
 }
 
 @media (max-width: 1025px) {
@@ -202,6 +213,9 @@ header a {
   position: absolute;
   inset: 0;
   z-index: 0;
+  canvas {
+    display: block;
+  }
 }
 
 .courses .container {
@@ -209,9 +223,6 @@ header a {
   z-index: 1;
 }
 
-#particles-js canvas {
-  display: block;
-}
 .course-cards {
   display: flex;
   flex-wrap: wrap;
@@ -229,37 +240,45 @@ header a {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+
+  p {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  a {
+    color: #fff;
+    padding: 13px 24px;
+    display: inline-block;
+    font-family: "Futura-Bol";
+    font-weight: bold;
+    font-size: 13px;
+    margin: 10px;
+    border-radius: 10px;
+  }
 }
 
-.course-card img {
-  margin-bottom: 60px;
-  max-height: 150px;
+.images-container {
+  align-items: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
 }
 
 /* #ruby-img img{
     width: 108px;
 } */
 
-.course-card p {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.course-card a {
-  color: #fff;
-  padding: 13px 24px;
-  display: inline-block;
-  font-family: "Futura-Bol";
-  font-weight: bold;
-  font-size: 13px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.course-card:nth-of-type(3) img {
+/* .course-card:nth-of-type(3) img {
   width: 110px;
   height: 110px;
-}
+} */
 
 .course-btn.is-html {
   background: #de6d3c;
@@ -285,6 +304,11 @@ header a {
 
 .course-btn:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  
+}
+.course-btn {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s;
 }
 
 @media (max-width: 768px) {
@@ -294,7 +318,7 @@ header a {
     padding: 10px;
   }
 
-  .course-card img {
+  .images-containerimg {
     max-height: 70px;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -319,9 +343,19 @@ header a {
     margin-top: 15px;
   }
 
-  .course-card:nth-of-type(3) img {
-    width: 70px;
-    height: 70px;
+
+.images-container {
+  align-items: center;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
   }
 }
 
@@ -341,7 +375,7 @@ header a {
   height: auto;
   display: block;
 }
-/* .images .container{
+.images .container{
     width: 100%;
     max-width: 9900px;
     padding: 0 40px;
@@ -353,7 +387,7 @@ header a {
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s;
-} */
+}
 .img-container {
   width: 100%;
 }
